@@ -39,7 +39,7 @@ body {
 }
 
 #featuredProduct, .heroGridArea{
-  background-image: url(../images/couch.png);
+  background-image: url(../images/couch@2x.png);
 }
 #secondaryProduct, .heroGridArea{
   background-image: url(../images/beds.png);;
