@@ -3,7 +3,14 @@ body {
 }
 
 /* Grid CSS */
-
+#heroGrid{
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: ;
+  grid-template-columns: ;
+}
 
 /* Category Grid CSS */
 
