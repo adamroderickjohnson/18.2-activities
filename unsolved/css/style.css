@@ -20,7 +20,7 @@ body {
 /* Category Grid CSS */
 
 #featuredProduct{
-  grid-area: featuredProduct;
+grid-area: featuredProduct;
 }
 #secondaryProduct{
  grid-area: secondaryProduct;
@@ -55,7 +55,79 @@ body {
   z-index: 1;
   padding: 20px;
 }
+#categoryGrid{
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1f;
+  grid-template-areas: 
+  "bookcases desks patio"
+  "bedroom bedroom patio"
+  "couches couches couches";
+}
 
+.subHeading{
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.categoryGridArea{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor:pointer;
+  display: grid;
+  align-content: end;
+}
+
+#bookcases{
+  grid-area: bookcases;
+}
+
+#couches{
+  grid-area: couches;
+}
+
+#bedroom{
+  grid-area: bedroom;
+}
+#patio{
+  grid-area: patio;
+}
+#desks{
+  grid-area: desks;
+}
+
+#categoryGrid, #bookcases{
+  background-image: url(../images/bookcases.png);
+}
+
+#categoryGrid, #couches{
+  background-image: url(../images/couches.png);
+}
+
+#categoryGrid, #bedroom{
+  background-image: url(../images/beds.png);
+}
+
+#categoryGrid, #patio{
+  background-image: url(../images/patio.png);
+}
+#categoryGrid, #desks{
+  background-image: url(../images/desks.png);
+}
+
+.heading{
+background-color: rgba(0,0,0,0.7);
+padding: 15px;
+height: 25px;
+color: white;
+font-size: 18px;
+border-bottom: 5px solid #ff6200;
+}
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
